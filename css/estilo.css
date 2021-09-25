@@ -55,3 +55,26 @@ font-family: 'Roboto', sans-serif; */
 .header-navigation a:hover::after {
   width: 100%;
 }
+
+.features {
+  width: 100%;
+  padding: 40px 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  width: 600px;
+}
+
+.content h2 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 70px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.content p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
+}
