@@ -1,80 +1,57 @@
 /* font-family: 'Amaranth', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body > .pre-rodape {
+    position: absolute;
+    left: auto;
+    top: auto;
+    width: auto;
+    height: 450px;
+
+    background: #fed843;
+    border-radius: 0px 318px 0px 0px;
 }
 
-.header {
-  height: 150px;
-  width: 100vw;
-  background-color: #fff;
-  display: flex;
-  padding: 40px 20%;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  transition: all .4s ease-in-out;
+body > .pre-rodape > .titulo-pre-rodape > h2 {
+    font-family: 'Amaranth', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 87px;
+    align-items: center;
+
+    color: #000;
 }
 
-.ghost-helper {
-  height: 150px;
+body > .pre-rodape > .txt-pre-rodape > p {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    align-items: center;
+
+    color: #000;
 }
 
-.header-logo img {
-  transition: all .4s ease-in-out;
+body > footer {
+    display: list-item;
+    align-items: center;
 }
 
-.header-navigation {
-  width: 430px;
-  display: flex;
-  justify-content: space-between;
+body > footer > p {
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    color: #000;
+    top: 480px;
 }
 
-.header-navigation a {
-  text-decoration: none;
-  color: black;
-  font-family: 'Amaranth', sans-serif;
-  font-size: 24px;
-  position: relative;
-}
-
-.header-navigation a::after {
-  content: "";
-  position: absolute;
-  height: 2px;
-  width: 0;
-  background-color: #FF6666;
-  transition: all .5s ease-in-out;
-  top: 28px;
-  right: 0;
-}
-
-.header-navigation a:hover::after {
-  width: 100%;
-}
-
-.features {
-  width: 100%;
-  padding: 40px 20%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.content {
-  width: 600px;
-}
-
-.content h2 {
-  font-family: 'Amaranth', sans-serif;
-  font-size: 70px;
-  font-weight: normal;
-  margin-bottom: 50px;
-}
-
-.content p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 26px;
+body > footer > div > .img {
+    position: absolute;
+    max-width:100px;
+    max-height:50px;
 }
