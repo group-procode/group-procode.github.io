@@ -1,9 +1,8 @@
-/* font-family: 'Amaranth', sans-serif;
-font-family: 'Roboto', sans-serif; */
 
-header{
-    width: 100%;
-    height: 180px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .bg{
@@ -26,14 +25,14 @@ header{
     top: 348px;
 }
 
-.content{
+.content-intro{
     width: 463px;
     margin-left: 720px;
     margin-top: 110px;
 
 }
 
-.content h1{
+.content-intro h1{
     font-family: 'Amaranth', sans-serif;
     color: #fff;
     font-size: 72px;
@@ -42,9 +41,81 @@ header{
     font-weight: normal;
 }
 
-.content p{
+.content-intro p{
     font-family: 'Roboto', sans-serif; 
     color: #fff;
     font-size: 26px;
     line-height: 30px;
+}
+
+.header {
+  height: 150px;
+  width: 100vw;
+  background-color: #fff;
+  display: flex;
+  padding: 40px 20%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  transition: all .4s ease-in-out;
+}
+
+.ghost-helper {
+  height: 150px;
+}
+
+.header-logo img {
+  transition: all .4s ease-in-out;
+}
+
+.header-navigation {
+  width: 430px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Amaranth', sans-serif;
+  font-size: 24px;
+  position: relative;
+}
+
+.header-navigation a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  background-color: #FF6666;
+  transition: all .5s ease-in-out;
+  top: 28px;
+  right: 0;
+}
+
+.header-navigation a:hover::after {
+  width: 100%;
+}
+
+.features {
+  width: 100%;
+  padding: 40px 20%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content-features {
+  width: 600px;
+}
+
+.content-features h2 {
+  font-family: 'Amaranth', sans-serif;
+  font-size: 70px;
+  font-weight: normal;
+  margin-bottom: 50px;
+}
+
+.content-features p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 26px;
 }
