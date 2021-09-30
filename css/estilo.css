@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+h2 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 70px;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+h3 {
+  font-family: "Amaranth", sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+}
+
 .header {
   height: 150px;
   width: 100vw;
@@ -53,27 +72,50 @@
   width: 100%;
 }
 
-.features {
+.container-intro {
+  width: 100%;
+  height: 650px;
+  background-color: #31BEBE;
+  border-radius: 0px 0px 0px 318px;
+  display: flex;
+}
+
+.content-intro h1 {
+  font-family: 'Amaranth', sans-serif;
+  color: #fff;
+  font-size: 72px;
+  line-height: 87px;
+  font-style: normal;
+  font-weight: normal;
+  padding-bottom: 48px;
+}
+
+.div-intro {
+  margin-top: 50px;
+}
+
+.content-intro p {
+  color: #fff;
+}
+
+.container-layout {
   width: 100%;
   padding: 40px 20%;
   display: flex;
   justify-content: space-between;
 }
 
-.content-features {
+.content-intro, .content-features {
   width: 600px;
 }
 
-.content-features h2 {
-  font-family: "Amaranth", sans-serif;
-  font-size: 70px;
-  font-weight: normal;
-  margin-bottom: 50px;
+.container-features {
+  margin-top: 120px;
+  height: 480px;
 }
 
-.content-features p {
-  font-family: "Roboto", sans-serif;
-  font-size: 26px;
+.content-features, .titulo-pre-rodape h2 {
+  margin-bottom: 50px;
 }
 
 .features-div {
@@ -82,6 +124,7 @@
   text-align: center;
   height: 600px;
   opacity: 0;
+  margin-top: 250px;
 }
 
 .features-div h2 {
@@ -99,10 +142,11 @@
 }
 
 .topicos-div {
-  width: 204px;
-  height: 300px;
+  width: 343px;
   border-radius: 10px;
   background-color: #ff6666;
+  padding-top: 44px;
+  padding-bottom: 5.5px;
   margin-top: 40px;
 }
 
@@ -126,10 +170,7 @@
 }
 
 .text-content {
-  font-family: "Roboto";
-  width: 157px;
-  font-size: 16px;
-  height: 150px;
+  width: 240px;
   margin: auto;
   margin-top: 40px;
   color: white;
@@ -144,18 +185,14 @@
   text-decoration: none;
   margin: auto;
   width: 96%;
-  height: 60px;
+  height: 96px;
   border-radius: 10px;
   background: #ffff;
   border: none;
   font-family: "Amaranth";
+  font-size: 25px;
   color: black;
-}
-
-.teste {
-  background: #31bebe;
-  height: 1060px;
-  text-align: center;
+  margin-top: 41px;
 }
 
 .text-btn {
@@ -164,8 +201,8 @@
 }
 
 .text-btn img {
-  width: 12px;
-  height: 12px;
+  width: 20px;
+  height: 20px;
 }
 
 .active {
@@ -197,54 +234,29 @@
   }
 }
 
-body > .pre-rodape {
-  position: absolute;
-  left: auto;
-  top: auto;
-  width: auto;
-  height: 450px;
+.pre-rodape {
+  height: 650px;
   background: #fed843;
   border-radius: 0px 318px 0px 0px;
+  z-index: -1;
 }
 
-body > .pre-rodape > .titulo-pre-rodape > h2 {
-  font-family: "Amaranth", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 72px;
-  line-height: 87px;
-  align-items: center;
-  color: #000;
+.div-sobre {
+  margin-top: 150px;
+  padding-top: 90px;
 }
 
-body > .pre-rodape > .txt-pre-rodape > p {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 26px;
-  line-height: 30px;
-  align-items: center;
-  color: #000;
-}
-
-body > footer {
-  display: list-item;
+footer {
   align-items: center;
 }
 
-body > footer > p {
-  position: absolute;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 25px;
+footer p {
   color: #000;
   top: 480px;
+  font-size: 18px;
 }
 
-body > footer > div > .img {
-  position: absolute;
+footer .img {
   max-width: 100px;
   max-height: 50px;
 }
