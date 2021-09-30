@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-size: 26px;
@@ -95,7 +99,9 @@ h3 {
 }
 
 .content-intro p {
+  font-size: 25px;
   color: #fff;
+  width: 400px;
 }
 
 .container-layout {
@@ -105,6 +111,10 @@ h3 {
   justify-content: space-between;
 }
 
+.content-intro {
+  margin-top: 80px;
+}
+
 .content-intro, .content-features {
   width: 600px;
 }
@@ -112,6 +122,12 @@ h3 {
 .container-features {
   margin-top: 120px;
   height: 480px;
+}
+
+.content-features li {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
 .content-features, .titulo-pre-rodape h2 {
@@ -177,6 +193,10 @@ h3 {
   text-align: center;
 }
 
+.text-content p {
+  font-size: 18px;
+}
+
 .topicos-div:nth-child(2) .text-content {
   color: black;
 }
@@ -193,6 +213,7 @@ h3 {
   font-size: 25px;
   color: black;
   margin-top: 41px;
+  cursor: pointer;
 }
 
 .text-btn {
@@ -239,6 +260,12 @@ h3 {
   background: #fed843;
   border-radius: 0px 318px 0px 0px;
   z-index: -1;
+}
+
+.pre-rodape p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
 }
 
 .div-sobre {
